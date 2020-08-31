@@ -1,0 +1,15 @@
+<div [ngSwitch]='dkSwitch'>
+    <div *ngSwitchCase="'blue'" style="color:blue">Màu xanh da trời</div>
+    <div *ngSwitchCase="'red'" style="color:red">Màu đỏ</div>
+    <div *ngSwitchCase="'green'" style="color:green">Màu xanh xanh lá</div>
+    <div *ngSwitchDefault="'black'" style="color:black">Màu đen</div>
+</div>
+<div class="form-group">
+    <label for="">lựa màu</label>
+    <select class="form-control" #option (change)='changeColor(option.value)'>
+        <option value='blue'>blue</option>
+        <option value='red'>red</option>
+        <option value='green'>green</option>
+        <option value='black'>black</option>
+    </select>
+</div>

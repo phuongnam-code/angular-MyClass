@@ -1,0 +1,7 @@
+<ul>
+    <ng-container *ngIf='listFriend'>
+        <li *ngFor='let friend of listFriend; let i = index'>
+            {{i+1}}. bạn: {{friend.name}} - {{friend.age}} tuổi
+        </li>
+    </ng-container>
+</ul>

@@ -1,0 +1,8 @@
+<div *ngIf='status; else contentLogin'>
+    <h3>Xin chào</h3>
+    <button (click)='logout()'>Logout</button>
+</div>
+<ng-template #contentLogin>
+    <h3>Chưa đăng nhập</h3>
+    <button>Login</button>
+</ng-template>

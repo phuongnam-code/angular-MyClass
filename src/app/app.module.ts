@@ -1,3 +1,4 @@
+import { DataBindingModule } from './data-binding/data-binding.module';
 import { Baitap2Module } from './baitap2/baitap2.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -5,12 +6,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { Baitap1Module } from './baitap1/baitap1.module';
+import { StructuralDirectiveModule } from './structural-directive/structural-directive.module'
+
 
 @NgModule({
   // nơi khai báo các component
   declarations: [
     AppComponent,
-    DemoComponent
+    DemoComponent,
+
   ],
 
   // nơi khai báo các module
@@ -18,7 +22,7 @@ import { Baitap1Module } from './baitap1/baitap1.module';
   // or do Dev tự tạo: HomeModule, AdminModule
   // ngoại trừ AppModule còn các module khác phải import vào module cha
   imports: [
-    BrowserModule, Baitap1Module, Baitap2Module
+    BrowserModule, Baitap1Module, Baitap2Module, DataBindingModule, StructuralDirectiveModule
   ],
   // chưa đụng tới
   providers: [],

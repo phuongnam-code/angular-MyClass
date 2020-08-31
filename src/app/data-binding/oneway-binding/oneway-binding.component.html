@@ -1,0 +1,9 @@
+<h3>1. Oneway binding</h3>
+
+<p>{{username}}</p>
+<!-- cách 1 interpolation -->
+<input type="text" value="{{username}}" #thamso>
+<!-- event binding -->
+<button (click)='eventBinding(thamso.value)'>Click</button>
+<!-- property binding  cách 2-->
+<!-- <input type="text" [value]="username"> -->
