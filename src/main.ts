@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+//khai báo cái AppModule là module gốc của ứng dụng
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

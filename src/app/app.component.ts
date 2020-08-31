@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// file .ts là viết logic: vd tạo biến tạo hàm
 export class AppComponent {
   title = 'angularMyClass';
 }
