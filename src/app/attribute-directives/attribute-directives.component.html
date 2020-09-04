@@ -1,0 +1,14 @@
+<h1>attribute-directive works!</h1>
+<h3>1. ngClass</h3>
+<div class="bg-primary" [ngClass]="{'bg-danger':isActive,'text-white':isLoading}">demo ngClass</div>
+<button (click)='isActive = !isActive'>đổi màu nền</button>
+<button (click)='isLoading = !isLoading'>đổi màu chữ</button>
+
+<h3>2. ngStyle</h3>
+<!-- [ngStyle]="{'tên CSS': value}" -->
+<div [ngStyle]="{'color': color,'background-image':'url('+urlImg+')'}" style="width: 132px; height: 186px;">
+    demo ngStyle
+</div>
+
+<h3>3. ngNonBindable</h3>
+<p ngNonBindable>{{code}}</p>

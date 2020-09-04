@@ -1,0 +1,39 @@
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="">Tên phim</label>
+                    <input type="text" #tenphim class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Giá</label>
+                    <input type="text" #gia class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Hình ảnh</label>
+                    <input type="text" #hinhanh class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Mô tả</label>
+                    <input type="text" #mota class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"
+                    (click)='xuLyThemPhim(tenphim.value, gia.value, hinhanh.value, mota.value)'>Save</button>
+            </div>
+        </div>
+    </div>
+</div>

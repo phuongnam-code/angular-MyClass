@@ -1,3 +1,6 @@
+import { InteractionModule } from './interaction/interaction.module';
+import { Baitap6Module } from './baitap6/baitap6.module';
+import { AttributeDirectivesModule } from './attribute-directives/attribute-directives.module';
 import { DataBindingModule } from './data-binding/data-binding.module';
 import { Baitap2Module } from './baitap2/baitap2.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,7 +25,7 @@ import { StructuralDirectiveModule } from './structural-directive/structural-dir
   // or do Dev tự tạo: HomeModule, AdminModule
   // ngoại trừ AppModule còn các module khác phải import vào module cha
   imports: [
-    BrowserModule, Baitap1Module, Baitap2Module, DataBindingModule, StructuralDirectiveModule
+    BrowserModule, Baitap1Module, Baitap2Module, DataBindingModule, StructuralDirectiveModule, AttributeDirectivesModule, Baitap6Module, InteractionModule
   ],
   // chưa đụng tới
   providers: [],
